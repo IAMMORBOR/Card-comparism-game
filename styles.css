@@ -1,0 +1,120 @@
+ body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: green; */
+  
+}
+
+.cardgame{
+  padding: 4rem 2rem;
+  
+ 
+}
+#myInput{
+  height: 2rem;
+  width: 10rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+
+}
+::placeholder{
+font-size: 1rem;
+font-family: 'Poppins', sans-serif;
+text-align: center;
+}
+#start,
+#reset{
+  height: 2rem;
+  width: 4rem;
+  color: #fff;
+  border-radius: 4rem;
+  background-color: red;
+}
+
+
+#grid {
+  width: 100vw;
+  height: 150px;
+  padding: 20px;
+  display: flex;
+  /* overflow-x: scroll; */
+  /* justify-content: center; */
+  align-items: center;
+  margin: auto;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .gamecenter{
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 4rem;
+} */
+/* .gameFunction{
+  display: flex;
+ 
+} */
+/* #high{
+  margin-right: 3rem;
+} */
+/* #high,
+#low{
+  background-color: blue;
+ text-transform: capitalize;
+  height: 2.5rem;
+  width: 9rem;
+  font-size: 1.2rem;
+  border:none;
+  color: #fff;
+  /* border: 2px solid green; */
+  /* border-radius: 8px; */
+/* } */
+/* #start:hover{
+  width: 9.5rem;
+  transform: translateX(2%);
+}
+#high:hover,
+#low:hover{
+  transform: translateX(2%);
+  background-color:rgb(73, 73, 230); 
+  width: 9.5rem;
+} */
+/* #start{
+  text-transform: capitalize;
+  height: 2.5rem;
+  width: 9rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: green;
+  border: none;
+  border-radius: 8px;
+}
+
+
+#grid {
+    width: 1332px;
+    height: 323px;
+     display: flex;
+     justify-content: center;
+    align-items: center; 
+     margin: auto; 
+  } */
