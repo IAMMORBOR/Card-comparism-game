@@ -324,7 +324,7 @@ function createDeck(inputVal) {
         grid.appendChild(card)
         card.setAttribute('height', '150px')
         card.setAttribute('width', 'auto')
-        card.setAttribute('border', '1px', 'border-color:black')
+        card.setAttribute('border', '1px')
     }   
     start.removeEventListener('click', startGame)
     const firstCard = document.querySelector(" [data-id='0'] ")
