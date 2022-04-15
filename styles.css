@@ -1,4 +1,236 @@
- body{
+html {
+  box-sizing: border-box;
+  font-size: 85.5%; }
+
+  @media screen and (max-width: 600px) {
+    html{
+      font-size: 75.5%;
+    }
+  }
+  
+
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+   background-color:#D8D2CB; 
+}
+
+#message{
+  margin: 2rem 0rem;
+  text-transform: uppercase;
+  color: green;
+}
+
+#myInput{
+  height: 2rem;
+  width: 10rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+::placeholder{
+font-size: 1rem;
+font-family: 'Poppins', sans-serif;
+text-align: center;
+}
+.gameMenu{
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+ 
+}
+@media screen and (max-width: 600px) {
+  .gameMenu{
+    flex-direction: row;
+  }
+}
+
+.gamedemo{
+  text-decoration: none;
+  text-transform: uppercase;
+ font-size: 1rem;
+ color: #fff;
+}
+.game_demo__section{
+  background-color: red;
+  /* margin-bottom: -1rem; */
+  height: 2rem;
+  width: 6rem;
+  border-radius: 4rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 38rem;
+}
+@media screen and (max-width: 600px) {
+  .game_demo__section{
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
+#start{
+  background-color: #3E7C17;
+}
+
+#start:hover{
+  background-color: #85C88A;
+  border: 1px solid #7e7c79;
+}
+
+#reset{
+  background-color: red;
+}
+
+#reset:hover{
+  background-color:#DA1212;
+}
+
+#high{
+  background-color: #041562;
+}
+
+#low{
+  background-color: #FFC300;
+}
+
+#stick{
+  margin-left: 6rem;
+  background-color:#DA1212;
+}
+
+#clear{
+  width: 5rem;
+  height: 2rem;
+  background-color: #E5DCC3;
+  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 2rem;
+ 
+}
+.btn_grid__section{
+  margin-left: 1rem;
+}
+#high,
+#low,
+#stick,
+#reset,
+#start{
+  height: 2rem;
+  width: 6rem;
+  color: #fff;
+  border-radius: 4rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+
+#grid {
+  width: 100%;
+  /* float: left; */
+  /* padding: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+table, th, td{
+border: 1px solid;
+margin-bottom: 1rem;
+/* margin-top: 10rem; */
+}
+
+.table_score{
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+table{
+  width: 100px;
+  /* height: 30%; */
+  border-collapse: collapse;
+  font-family: 'Poppins', sans-serif;
+}
+
+th{
+  width: 20px;
+}
+td{
+  text-align: center;
+  width: 40px;
+  height: 10px;
+}
+tr{
+  height: 30px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+/* .sample{
+  display: flex;
+} */
+
+/* .left{
+float: left;
+width: 85%;
+margin-top: 40px;
+margin-left: 40px;
+margin-bottom: 30px;
+}
+.right{
+float: right;
+margin-top: 100px;
+margin-right: 60px;
+} */
+/* .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+/* @media (max-width:37.5em){ 
+  .left{
+    float: none;
+  }
+  @media (max-width:37.5em){ 
+    .right{
+      float: none;
+    } */
+      
+    
+  
+.gamebutton{
+  text-decoration: none;
+  text-transform: uppercase;
+ font-size: 1rem;
+  color: #fff;
+}
+.startbtn_section{
+  background-color: #3E7C17;
+  margin-bottom: -1rem;
+  height: 2rem;
+  width: 8rem;
+  border-radius: 4rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.2rem 1rem;
+  padding: 4px;
+
+}
+
+
+
+/* body{
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
@@ -77,7 +309,6 @@ text-align: center;
 
 #grid {
   width: 100%;
-  /* padding: 20px; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -94,7 +325,6 @@ margin-bottom: 2rem;
 }
 table{
   width: 30%;
-  /* height: 30%; */
   border-collapse: collapse;
   font-family: 'Poppins', sans-serif;
 }
@@ -115,8 +345,4 @@ tr:nth-child(even) {
   display: flex;
 
   
-}
-/* .grid_table{
-  display: flex;
-  flex-direction: column;
 } */
