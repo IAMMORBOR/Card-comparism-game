@@ -1,14 +1,17 @@
 html {
   box-sizing: border-box;
-  font-size: 85.5%; }
-
-  @media screen and (max-width: 600px) {
+  font-size: 85.5%;
+ }
+ @media (max-width:56.2em){ 
+  html{
+    font-size: 80%;
+  }
+}
+  @media screen and (max-width: 37.5em) {
     html{
       font-size: 75.5%;
     }
   }
-  
-
 body{
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -16,13 +19,11 @@ body{
   box-sizing: border-box;
    background-color:#D8D2CB; 
 }
-
 #message{
   margin: 2rem 0rem;
   text-transform: uppercase;
   color: green;
 }
-
 #myInput{
   height: 2rem;
   width: 10rem;
@@ -31,7 +32,6 @@ body{
   font-size: 1.2rem;
   font-family: 'Poppins', sans-serif;
 }
-
 ::placeholder{
 font-size: 1rem;
 font-family: 'Poppins', sans-serif;
@@ -39,16 +39,13 @@ text-align: center;
 }
 .gameMenu{
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
- 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 37.5em) {
   .gameMenu{
     flex-direction: row;
   }
 }
-
 .gamedemo{
   text-decoration: none;
   text-transform: uppercase;
@@ -57,7 +54,6 @@ text-align: center;
 }
 .game_demo__section{
   background-color: red;
-  /* margin-bottom: -1rem; */
   height: 2rem;
   width: 6rem;
   border-radius: 4rem;
@@ -69,42 +65,47 @@ text-align: center;
   align-items: center;
   margin-left: 38rem;
 }
-@media screen and (max-width: 600px) {
+@media (max-width:56.2em){ 
   .game_demo__section{
-    flex-direction: column;
-    margin-left: 0;
+    flex-direction: row;
+    margin-left: 3rem;
   }
 }
+
 #start{
   background-color: #3E7C17;
+  margin: 0 1.2rem 0 1.2rem;
 }
+
 
 #start:hover{
   background-color: #85C88A;
   border: 1px solid #7e7c79;
 }
-
 #reset{
   background-color: red;
+  margin: 0 1.2rem 0 1.2rem;
 }
-
 #reset:hover{
   background-color:#DA1212;
 }
-
 #high{
   background-color: #041562;
+  margin: 0 1.2rem 0 1.2rem;
 }
-
 #low{
   background-color: #FFC300;
+  margin: 0 1.2rem 0 1.2rem;
 }
-
 #stick{
-  margin-left: 6rem;
+  margin-left: 49rem;
   background-color:#DA1212;
 }
-
+@media (max-width:56.2em){
+  #stick{
+    margin-left: 13rem;
+  }
+}
 #clear{
   width: 5rem;
   height: 2rem;
@@ -112,10 +113,12 @@ text-align: center;
   font-size: 1.1rem;
   font-family: 'Poppins', sans-serif;
   border-radius: 2rem;
- 
 }
 .btn_grid__section{
   margin-left: 1rem;
+}
+.mainbtn{
+  margin-top: 10rem;
 }
 #high,
 #low,
@@ -129,35 +132,26 @@ text-align: center;
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
 }
-
 #grid {
   width: 100%;
-  /* float: left; */
-  /* padding: 20px; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 2rem;
 }
-
 table, th, td{
 border: 1px solid;
 margin-bottom: 1rem;
-/* margin-top: 10rem; */
 }
-
 .table_score{
   text-transform: uppercase;
   font-size: 1.2rem;
 }
-
 table{
   width: 100px;
-  /* height: 30%; */
   border-collapse: collapse;
   font-family: 'Poppins', sans-serif;
 }
-
 th{
   width: 20px;
 }
@@ -169,42 +163,9 @@ td{
 tr{
   height: 30px;
 }
-
 tr:nth-child(even) {
   background-color: #f2f2f2;
-}
-/* .sample{
-  display: flex;
-} */
-
-/* .left{
-float: left;
-width: 85%;
-margin-top: 40px;
-margin-left: 40px;
-margin-bottom: 30px;
-}
-.right{
-float: right;
-margin-top: 100px;
-margin-right: 60px;
-} */
-/* .clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
-/* @media (max-width:37.5em){ 
-  .left{
-    float: none;
-  }
-  @media (max-width:37.5em){ 
-    .right{
-      float: none;
-    } */
-      
-    
-  
+} 
 .gamebutton{
   text-decoration: none;
   text-transform: uppercase;
@@ -227,122 +188,3 @@ margin-right: 60px;
   padding: 4px;
 
 }
-
-
-
-/* body{
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-   background-color:#D8D2CB;
-  
-}
-#message{
-  margin: 2rem 0rem;
-  text-transform: uppercase;
-  color: green;
-}
-.cardgame{
-  padding: 4rem 2rem;
-  
- 
-}
-#myInput{
-  height: 2rem;
-  width: 10rem;
-  border-radius: 1.5rem;
-  text-align: center;
-  font-size: 1.2rem;
-  font-family: 'Poppins', sans-serif;
-
-}
-::placeholder{
-font-size: 1rem;
-font-family: 'Poppins', sans-serif;
-text-align: center;
-}
-#start{
-  background-color: #3E7C17;
-}
-#start:hover{
-  background-color: #85C88A;
-  border: 1px solid #7e7c79;
-}
-#reset{
-  background-color: red;
-}
-#reset:hover{
-  background-color:#DA1212;
-
-}
-#high{
-  background-color: #041562;
-}
-#low{
-  background-color: #FFC300;
-}
-#stick{
-  margin-left: 6rem;
-  background-color:#DA1212;
-}
-#clear{
-  width: 6rem;
-  height: 2.5rem;
-  background-color: #E5DCC3;
-  font-size: 1.1rem;
-  font-family: 'Poppins', sans-serif;
-  border-radius: 2rem;
-}
-#high,
-#low,
-#stick,
-#reset,
-#start{
-  height: 2rem;
-  width: 6rem;
-  color: #fff;
-  border-radius: 4rem;
-  font-family: 'Poppins', sans-serif;
-  text-transform: uppercase;
-}
-
-#grid {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 3rem;
-}
-
-table, th, td {
-border: 1px solid;
-margin-bottom: 2rem;
-}
-.table_score{
-  text-transform: uppercase;
-  font-size: 1.2rem;
-}
-table{
-  width: 30%;
-  border-collapse: collapse;
-  font-family: 'Poppins', sans-serif;
-}
-th{
-  width: 20px;
-}
-td{
-  text-align: center;
-}
-tr{
-  height: 30px;
-}
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-.grid_section{
-  display: flex;
-
-  
-} */
