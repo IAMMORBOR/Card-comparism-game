@@ -15,43 +15,54 @@
         <button id="reset">Reset</button>
       </div>
       <div id="gameDeck">
-        <h3>Score: <span id="result"></span></h3>
-        <div id="grid"></div>
-    
-        <button id="high">Guess Larger</button>
-        <button id="low">Guess Smaller</button>
-        <button id="stick">Stick</button>
+            <h3>Score: <span id="result"></span></h3>
+            <!-- <div id="grid"></div> -->
       </div>
-      <div id="message"></div>
-      <div>
-        <table>
-          <th>High Scores</th>
-          <tr>
-            <th>1st</th>
-            <th><span id="one"></span></th>
-          </tr>
-          <tr>
-            <th>2nd</th>
-            <th><span id="two"></span></th>
-          </tr>
-          <tr>
-            <th>3rd</th>
-            <th><span id="three"></span></th>
-          </tr>
-          <tr>
-            <th>4th</th>
-            <th><span id="four"></span></th>
-          </tr>
-          <tr>
-            <th>5th</th>
-            <th><span id="five"></span></th>
-          </tr>
-        </table>
-        <button id="clear">Clear</button>
+      <div class="grid_section">
+        <div id="grid"></div> 
+        <div class="grid_table"> 
+          <table>
+            <tr>
+            <th colspan="2" class="table_score">High Scores</th>
+            </tr>
+            <tr>
+              <td>1st</td>
+                <td><span id="one"></span></td>
+            </tr>
+            <tr>
+              <td>2nd</td>
+              <td><span id="two"></span></td>
+            </tr>
+            <tr>
+              <td>3rd</td>
+              <td><span id="three"></span></td>
+            </tr>
+            <tr>
+              <td>4th</td>
+              <td><span id="four"></span></td>
+            </tr>
+            <tr>
+              <td>5th</td>
+              <td><span id="five"></span></td>
+            </tr>
+           </table>
+            <div class="btn_grid__section">
+              <button id="clear">Clear</button>
+            </div>
+          </div> 
+      </div>
+      <!-- <div id="grid"></div>  -->
+      <div class="test">
+        <div class="mainbtn">
+          <button id="high">Larger</button>
+          <button id="low"> Smaller</button>
+            <button id="stick">Stick</button>
+        </div>
+      <div class="message_section">
+        <div id="message"></div>
+        </div>
       </div>
    </div>
-  
- 
    <script src="app.js" charset="UTF-8"></script>
  </body>
 </html>
