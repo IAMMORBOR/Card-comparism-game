@@ -32,6 +32,12 @@ body{
   font-size: 1.2rem;
   font-family: 'Poppins', sans-serif;
 }
+@media screen and (max-width: 37.5em) {
+  #myInput{
+   width: 8rem;
+   margin-right: 2px;
+  }
+}
 ::placeholder{
 font-size: 1rem;
 font-family: 'Poppins', sans-serif;
@@ -77,32 +83,16 @@ text-align: center;
     margin-left: 3rem;
   }
 }
-
 #start{
   background-color: #3E7C17;
-  /* margin: 0 1rem 0 1rem; */
+  margin-right: 2px;
 }
-
-
 #start:hover{
   background-color: #85C88A;
   border: 1px solid #7e7c79;
 }
-@media screen and (max-width: 56.2em) {
-  #start{
-    display: inline-block;
-  
-  }
-}
 #reset{
   background-color: red;
-  /* margin: 0 1rem 0 1rem; */
-}
-@media screen and (max-width: 56.2em) {
-  #reset{
-    display: inline-block;
-  
-  }
 }
 #reset:hover{
   background-color:#DA1212;
@@ -113,20 +103,14 @@ text-align: center;
 }
 #low{
   background-color: #FFC300;
-  /* margin: 0 1rem 0 1rem; */
 }
 #stick{
   margin-left: 49rem;
   background-color:#DA1212;
 }
-/* @media (max-width:37.5em){
-  #stick{ */
-    /* margin-left: 5rem; */
-  /* }
-}  */
 @media (max-width:56.2em){
   #stick{
-    margin-left: 9rem;
+    margin-left: 8.8rem;
   }
 }
 #clear{
@@ -212,5 +196,5 @@ tr:nth-child(even) {
 
 }
 .buttons{
-  display: inline-flexbox;
+  display: flex
 }
