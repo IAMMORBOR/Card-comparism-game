@@ -65,9 +65,15 @@ text-align: center;
   align-items: center;
   margin-left: 38rem;
 }
+@media screen and (max-width: 37.5em) {
+  .game_demo__section{
+    flex-direction: column;
+    margin-left: 0;
+  }
+}
 @media (max-width:56.2em){ 
   .game_demo__section{
-    flex-direction: row;
+    flex-direction: column;
     margin-left: 3rem;
   }
 }
@@ -101,6 +107,11 @@ text-align: center;
   margin-left: 49rem;
   background-color:#DA1212;
 }
+@media (max-width:37.5em){
+  #stick{
+    margin-left: 8rem;
+  }
+} 
 @media (max-width:56.2em){
   #stick{
     margin-left: 13rem;
