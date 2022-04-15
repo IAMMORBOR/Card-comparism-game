@@ -19,11 +19,6 @@ body{
   box-sizing: border-box;
    background-color:#D8D2CB; 
 }
-@media screen and (max-width: 37.5em) {
-  body{
-    padding: 10px;
-  }
-}
 #message{
   margin: 2rem 0rem;
   text-transform: uppercase;
@@ -36,6 +31,7 @@ body{
   text-align: center;
   font-size: 1.2rem;
   font-family: 'Poppins', sans-serif;
+  margin-right: 3px;
 }
 @media screen and (max-width: 37.5em) {
   #myInput{
@@ -132,7 +128,7 @@ text-align: center;
   margin-left: 1rem;
 }
 .mainbtn{
-  margin-top: 10rem;
+  margin-top: 5rem;
 }
 #high,
 #low,
